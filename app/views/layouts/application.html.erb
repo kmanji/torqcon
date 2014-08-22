@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Torqcon</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<%= stylesheet_link_tag    'application' %>
+	<%= javascript_include_tag 'application' %>
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<meta charset="utf-8">
+	<%= csrf_meta_tags %>
+  	<% if @support_natural_device_width %>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<% end %>
 </head>
 <body>
+	<div id="header">
+		<div id="logo">
+	 		Torqcon
+		</div>
+		<% if request.path == root_path %>
+			<section class="landing">
+				<div class="hero-overlay">
+					<div class="container hero_text">
+						<h2>Reviews & Advocates</h2>
+						<div class="hero_text1">
+							<h4>Get readers from your target market to review your book and become your advocates on Amazon, B&N, Inkspand, Facebook, and Twitter.</h4>
+						</div>
+					</div>
+				</div>
+
+				<video autoplay="true" loop="true" muted="true">
+				  <source src="/ElectricBulb.webm" type="video/webm">
+				  <source src="/ElectricBulb.mp4" type="video/mp4">
+				  	Your browser does not support the video tag.
+				</video>
+			</section>
+		<% end %>
+	</div>
+
 
 <%= yield %>
 
