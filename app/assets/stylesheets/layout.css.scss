@@ -3,17 +3,30 @@ body{
 }
 
 #header{
+	height: 100vh;
+	//padding-bottom: 100px;
+	#logo{
+		color: black;
+		position: absolute;
+		font-size: 3.5em;
+		text-shadow: 1px 0px white;
+		padding: 20px;
+	}
 	.landing{
-		top: 0;
-		margin: 0; 
+        top: 0;
+        margin: 0; 
+        video{
+          height: 100%;
+          width: 100%;
+          
+        }
 
-		.hero-overlay{
-			color:white;
-			position:absolute;
-			width:100%;
-			margin-top: 100px;
-		}
-		h2{
+        .hero-overlay{
+          position:absolute;
+          width:100%;
+          margin-top: 100px;
+        }
+        h2{
           vertical-align: middle;
           margin-top: 21%;
           //margin-bottom: 5%;
@@ -24,36 +37,5 @@ body{
           text-align: center;
           text-shadow: 1px 0px white;
         }
-        .hero_text1{
-          vertical-align: middle;
-          padding: 20px;
-          
-          font-family: courier;
-          color: white;
-          text-shadow: 2px 2px black;
-          
-          h4{
-            font-size: 24px;
-            letter-spacing: 2px;
-            line-height: 32px;
-            text-align: center;
-            font-weight: 700;
-          }
-        }
-	    video{
-	      height: 100%;
-	      width: 100%;
-	      margin-top: -100px;
-	      //background-position: center;
-	    }
-	}
-
-
-	#logo {
-		color: white;
-		font-size: 40px;
-		margin: 20px;
-		position: relative;
-		display: inline-block;
-	}
+    }
 }

@@ -13,30 +13,27 @@
 	<% end %>
 </head>
 <body>
-	<div id="header">
+	<div id='header'>
 		<div id="logo">
-	 		Torqcon
+			Torqcon Logo Here
 		</div>
-		<% if request.path == root_path %>
-			<section class="landing">
+
+		<div id="user_nav">
+			<%#= link_to 'Getting Started', :about, :class => "btn-green getting-started" %>
+		</div>
+
+	    <% if request.path == root_path %>
+		    <section class="landing">
 				<div class="hero-overlay">
 					<div class="container hero_text">
-						<h2>Reviews & Advocates</h2>
-						<div class="hero_text1">
-							<h4>Get readers from your target market to review your book and become your advocates on Amazon, B&N, Inkspand, Facebook, and Twitter.</h4>
-						</div>
+						<h2>Coming Soon: Some Really Clever Text</h2>
 					</div>
 				</div>
-
-				<video autoplay="true" loop="true" muted="true">
-				  <source src="/ElectricBulb.webm" type="video/webm">
-				  <source src="/ElectricBulb.mp4" type="video/mp4">
-				  	Your browser does not support the video tag.
-				</video>
+				<%= render "layouts/hero_video" %>
+				<%#= render "layouts/main_hero" %> 
 			</section>
-		<% end %>
-	</div>
-
+	    <% end %>
+    </div>
 
 <%= yield %>
 
