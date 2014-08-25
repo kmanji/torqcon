@@ -4,6 +4,7 @@ body{
 
 #header{
 	height: 100vh;
+	margin-bottom: 100px;
 	//padding-bottom: 100px;
 	#logo{
 		color: black;
@@ -28,7 +29,7 @@ body{
         }
         h2{
           vertical-align: middle;
-          margin-top: 21%;
+          margin-top: 13%;
           //margin-bottom: 5%;
           font-size: 2.5em;
           //margin-left: 48%;
@@ -37,5 +38,8 @@ body{
           text-align: center;
           text-shadow: 1px 0px white;
         }
+    }
+    #nav-dropdown-menu{
+
     }
 }
