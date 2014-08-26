@@ -2,62 +2,76 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+
+
+.home-page{
+	margin: 7% 20px 20px 30px;
+}
+
+@media(max-width: 768px) {
+	.pull-left{
+		float: none !important;
+	}
+
+	.pull-right{
+		float: none !important;
+	}
+}
+
 .icon-column{
+	//margin: 20px;
 	margin-bottom: 25px;
-}
-.architect-icon {
-	position: relative;
-	width: 300px;
-	height: 300px;
-	margin: auto;
+	margin-top: 25px;
 	border-radius: 10px;
+	background-color: white;
 	border: 5px solid black; 
-	text-align: center;
+	padding: 25px;
+	min-height: 300px;
+	width: 48%;
 
-	&:hover {
-		border-radius: 10px;
-    	background-color: yellow;
+	h2{
+		color: #428bca; //#0033CC;
+		font-weight: 700;
 	}
-	img{
+
+	@media(max-width: 768px) {
+		width: 100%;
+	}
+
+	.icon-column-inner{
 		height: 250px;
-		width: 250px;
-		vertical-align: middle;
-		text-align: center;
-		color: #000000;
-		line-height: 1.4;
+		//width: 250px;
+		@media(max-width: 768px) { 
+			display: block;
+			text-align: center;
+			float: none !important;
+		}
+		img{
+			height: 200px;
+			width: 200px;
+			float: right;
+			@media(max-width: 768px) { 
+				float: none;
+			}
+		}
 	}
 }
 
-.hammer-icon{
-	position: relative;
-	width: 300px;
-	height: 300px;
-	margin: auto;
-	border-radius: 10px;
-	border: 5px solid black; 
+.action-button-main{
 	text-align: center;
-
-	&:hover {
-		border-radius: 10px;
-    	background-color: #FEFB09;
-	}
-	img{
-		height: 250px;
-		width: 250px;
-		vertical-align: middle;
-		text-align: center;
-		color: #000000;
-		line-height: 1.4;
-		margin: 30px;
-	}
-	i{
-		font-size: 15em;
-		margin: 20px;
-	}
+	font-size: 2em;
+	padding: 15px;
+	margin: 15px;
+	background-color: black;
+	border: 2px solid gray;
 }
 
 .contact-us{
 	margin: 1% 5% 5% 10%;
+	float: right;
 	.envelope-icon{
 		i{
 			font-size: 10em;

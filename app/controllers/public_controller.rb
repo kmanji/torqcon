@@ -4,4 +4,7 @@ class PublicController < ApplicationController
 
   def home
   end
+
+  def structural
+  end
 end
