@@ -8,7 +8,7 @@
 
 
 .home-page{
-	margin: 7% 20px 20px 30px;
+	margin: 0% 20px 20px 30px;
 }
 
 @media(max-width: 768px) {
@@ -93,4 +93,68 @@
 			font-size: 2em;
 		}
 	}
+}
+
+.structural-page {
+	.intro{
+		background-color: #D1D1D1;
+		font-size: 2.2em;
+		letter-spacing: 4px;
+		font-weight: 700;
+		padding: 40px;
+	}
+	.container{
+		width: 100%;
+		background-color: #F1F0F0;
+		hr{
+			border: 1px solid black;
+			margin-top: 40px; 
+		}
+		.build-pics{
+			margin-top: 25px;
+			img{
+				margin: 10px auto;
+			}
+		}
+		h2{
+			color: #428bca;
+			letter-spacing: 4px;
+			margin-top: 40px;
+		}
+		.download-pdf{
+			font-size: 1.5em;
+			padding: 18px;
+			margin-top: 30px;
+		}
+		.structural-doc{
+			background-color: black;
+		}
+	}
+
+	#sidebar {
+		padding:30px;
+		margin-left: 5%;
+	}
+
+	#sidebar li.active {
+	  	border:0 #eee solid;
+	  	border-right-width:4px;
+	}
+
+	
+	@media(min-width: 992px) {
+		#sidebar.affix-top {
+			position: static;
+			margin-top:30px;
+			width:228px;
+		}
+	  
+		#sidebar.affix {
+			position: fixed;
+			top:70px;
+			width:228px;
+		}
+	}
+
+
 }

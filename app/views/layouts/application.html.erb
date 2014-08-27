@@ -12,29 +12,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<% end %>
 </head>
-<body>
-	<div id='header'>
-		<div id="logo">
-			Torqcon Logo Here
-		</div>
-
-		<div id="nav-dropdown-menu">
-			
-		</div>
-
-	    <% if request.path == root_path %>
-		    <section class="landing">
-				<div class="hero-overlay">
-					<div class="container hero_text">
-						<h2>Coming Soon: Some Really Clever Text</h2>
-						<p align="center"><a href="/public/structural" class="btn btn-primary btn-lg action-button-main" role="button">Build Your Modern Structural Shell</a></p>
-					</div>
+<div id='header'>
+	<a href="/"><div id="logo">
+		Torqcon Logo Here
+	</div></a>
+    <% if request.path == root_path %>
+	    <section class="landing">
+			<div class="hero-overlay">
+				<div class="container hero_text">
+					<h2>Coming Soon: Some Really Clever Text</h2>
+					<p align="center"><a href="/public/structural" class="btn btn-primary btn-lg action-button-main" role="button">Build Your Modern Structural Shell</a></p>
 				</div>
-				<%= render "layouts/hero_video" %>
-				<%#= render "layouts/main_hero" %> 
-			</section>
-	    <% end %>
-    </div>
+			</div>
+			<%= render "layouts/hero_video" %>
+			<%#= render "layouts/main_hero" %> 
+		</section>
+    <% end %>
+</div>
+<body>
 
 <%= yield %>
 
