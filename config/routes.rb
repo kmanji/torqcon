@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root :to => 'public#home'
-  get 'public/structural'
+  get 'public/structural' => 'public#structural'
 
   
   # The priority is based upon order of creation: first created -> highest priority.
