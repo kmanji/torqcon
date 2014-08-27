@@ -36,6 +36,9 @@
 		color: #428bca; //#0033CC;
 		font-weight: 700;
 	}
+	@media(min-width: 992px) and (max-width: 1700px) {
+		min-height: 465px;
+	}
 
 	@media(max-width: 768px) {
 		width: 100%;
@@ -44,16 +47,17 @@
 	.icon-column-inner{
 		height: 250px;
 		//width: 250px;
-		@media(max-width: 768px) { 
+		@media(max-width: 992px) { 
 			display: block;
 			text-align: center;
 			float: none !important;
 		}
+
 		img{
 			height: 200px;
 			width: 200px;
 			float: right;
-			@media(max-width: 768px) { 
+			@media(max-width: 992px) { 
 				float: none;
 			}
 		}

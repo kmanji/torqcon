@@ -42,10 +42,13 @@ body{
         	text-align: center;
         	font-size: 2em;
         	padding: 15px;
-			margin: 15px;
-			background-color: black;
-			border: 2px solid gray;
-			min-width:auto;
+    			margin: 15px;
+    			background-color: black;
+    			border: 2px solid gray;
+    			min-width:auto;
+          &:hover{
+            background-color: #428bca;
+          }
         }
     }
     @media(max-width: 768px) {
