@@ -31,11 +31,20 @@
 	padding: 25px;
 	min-height: 300px;
 	width: 48%;
+	text-decoration: none;	
+	color:black;
 
 	h2{
 		color: #428bca; //#0033CC;
 		font-weight: 700;
 	}
+	// p{
+	// 	color: black;
+	// 	text-decoration: none;
+	// 	&:hover{
+	// 		text-decoration: none;
+	// 	}
+	// }
 	@media(min-width: 992px) and (max-width: 1700px) {
 		min-height: 465px;
 	}

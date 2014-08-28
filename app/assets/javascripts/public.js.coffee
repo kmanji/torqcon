@@ -18,18 +18,25 @@ resizeSidebar = () ->
 	$("#sidebar").affix offset:
 		top: 245
 
+loadMenu = () ->
+	$body   = $(document.body);
+	$body.scrollspy({
+		target: '#leftCol'
+	});
+
 $ ->
 
-	repositionLogo()
+#	repositionLogo()
+	loadMenu()
 
 	jQuery.event.add window, "load", resizeSidebar
 	jQuery.event.add window, "resize", resizeSidebar
+	jQuery.event.add window, "scroll", resizeSidebar
+
 
 	$('.action-button-main').click () ->
 		repositionLogo()	
 
-	$body   = $(document.body);
+	
 
-	$body.scrollspy({
-		target: '#leftCol'
-	});
+		

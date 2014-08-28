@@ -13,11 +13,20 @@
 	<% end %>
 </head>
 <div id='header'>
-	<div id="logo">
-		<%# link_to root_path do %>
-			Torqcon Logo Here
-		<%# end %>
-	</div>
+	<% if request.path == root_path %>
+		<div id="logo">
+			<%= link_to "Torqcon Logo Here", root_path %> <!--  do -->
+				
+			<%# end %>
+		</div>
+	<% else %>
+		<div id="logo-structural">
+			<%= link_to "Torqcon Logo Here", root_path %> <!--  do -->
+				
+			<%# end %>
+		</div>
+	<% end %>
+
     <% if request.path == root_path %>
 	    <section class="landing">
 			<div class="hero-overlay">
