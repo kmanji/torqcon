@@ -40,8 +40,13 @@
 		min-height: 465px;
 	}
 
+	@media(min-width: 769px) and (max-width: 992px) {
+		min-height: 550px;
+	}
+
 	@media(max-width: 768px) {
 		width: 100%;
+		min-height: auto;
 	}
 
 	.icon-column-inner{
@@ -71,14 +76,16 @@
 	margin: 15px;
 	background-color: black;
 	border: 2px solid gray;
+	white-space: normal;
 }
 
-.contact-us{
-	margin: 1% 5% 5% 10%;
-	float: right;
+.contact-mailing{
+	margin-bottom: 5%;
+	display: inline-block;
+	width: 100%;
 	.envelope-icon{
 		i{
-			font-size: 10em;
+			font-size: 7em;
 			margin: 50px;
 			display: inline-block;
 			&:hover{
@@ -90,8 +97,15 @@
 		}
 		.contact-info{
 			display: inline-block;
-			font-size: 2em;
+			font-size: 1.5em;
+			letter-spacing: 5px;
 		}
+	}
+	@media(max-width: 992px) {
+		display: block;
+	}
+	@media(max-width: 768px) {
+		margin-left: 0;
 	}
 }
 

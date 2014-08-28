@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'base/new'
+
   root :to => 'public#home'
   get 'public/structural' => 'public#structural'
 

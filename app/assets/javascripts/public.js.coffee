@@ -26,7 +26,7 @@ $ ->
 	jQuery.event.add window, "resize", resizeSidebar
 
 	$('.action-button-main').click () ->
-		repositionLogo()
+		repositionLogo()	
 
 	$body   = $(document.body);
 

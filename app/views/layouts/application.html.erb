@@ -13,9 +13,11 @@
 	<% end %>
 </head>
 <div id='header'>
-	<a href="/"><div id="logo">
-		Torqcon Logo Here
-	</div></a>
+	<div id="logo">
+		<%# link_to root_path do %>
+			Torqcon Logo Here
+		<%# end %>
+	</div>
     <% if request.path == root_path %>
 	    <section class="landing">
 			<div class="hero-overlay">
@@ -25,7 +27,7 @@
 				</div>
 			</div>
 			<%= render "layouts/hero_video" %>
-			<%#= render "layouts/main_hero" %> 
+			<%= render "layouts/main_hero" %> 
 		</section>
     <% end %>
 </div>

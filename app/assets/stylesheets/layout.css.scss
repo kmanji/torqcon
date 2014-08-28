@@ -13,45 +13,68 @@ body{
 		font-size: 3.5em;
 		text-shadow: 1px 0px white;
 		padding: 20px;
+    text-decoration: none;
 	}
 	.landing{
-        top: 0;
-        margin: 0; 
-        video{
-          height: 100%;
-          width: 100%;
-        }
+    top: 0;
+    margin: 0; 
+    video{
+      @media(max-width: 992px) {
+        display: none;
+      }
+      @media(min-width: 992px) {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .hero_unlock_door{
+      @media(min-width: 992px) {
+        display: none;
+      }
+      @media(max-width: 992px) { 
+        background: url('barn-home.jpg') no-repeat;
+        background-attachment: fixed;
+        background-position: bottom left;
+        height: 100vh; //600px; 
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        -o-background-size: cover;
+        max-width: 100%;
+      }
+    }
 
-        .hero-overlay{
-          position:absolute;
-          width:100%;
-          margin-top: 100px;
+      .hero-overlay{
+        position:absolute;
+        width:100%;
+        margin-top: 100px;
+      }
+      h2{
+        vertical-align: middle;
+        margin-top: 13%;
+        //margin-bottom: 5%;
+        font-size: 2.5em;
+        //margin-left: 48%;
+        letter-spacing: 4px;
+        font-family: courier;
+        text-align: center;
+        text-shadow: 1px 0px white;
+        @media(max-width: 991px) { 
+          margin-top: 18%;
         }
-        h2{
-          vertical-align: middle;
-          margin-top: 13%;
-          //margin-bottom: 5%;
-          font-size: 2.5em;
-          //margin-left: 48%;
-          letter-spacing: 4px;
-          font-family: courier;
-          text-align: center;
-          text-shadow: 1px 0px white;
-        }
-        .action-button-main{
-        	text-align: center;
-        	font-size: 2em;
-        	padding: 15px;
-    			margin: 15px;
-    			background-color: black;
-    			border: 2px solid gray;
-    			min-width:auto;
-          &:hover{
-            background-color: #428bca;
-          }
-        }
+      }
+    .action-button-main{
+    	text-align: center;
+    	font-size: 2em;
+    	padding: 15px;
+			margin: 15px;
+			background-color: black;
+			border: 2px solid gray;
+			min-width:auto;
+      &:hover{
+        background-color: #428bca;
+      }
     }
-    @media(max-width: 768px) {
-    	
-    }
+  }
 }
